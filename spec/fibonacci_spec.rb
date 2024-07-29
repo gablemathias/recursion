@@ -9,8 +9,13 @@ describe "Fibonacci" do
     expect(fibonacci(target)).to eq(21)
   end
 
-  it "returns an Array of the Fibonacci sequence" do
+  it "returns an Array of the Fibonacci sequence using loop" do
     result = fibs(8)
+    expect(result).to eq(arr)
+  end
+  
+  it "returns an Array of the Fibonacci sequence using recursion" do
+    result = fibs_rec(8)
     expect(result).to eq(arr)
   end
 end
